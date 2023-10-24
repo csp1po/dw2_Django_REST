@@ -5,4 +5,5 @@
 ### Django (aplicação monolítica)
 
 ### Django REST Framework
-* Tutorial 01: Tutorial Django REST 01 – Criando Uma Aplicação Web para Biblioteca e sua API ()
+* Tutorial Django REST 01 – Criando Uma Aplicação Web para Biblioteca e sua API: ()
+* 
