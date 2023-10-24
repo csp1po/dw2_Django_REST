@@ -5,7 +5,7 @@ Neste tutorial vamos construir um Web Site básico para uma biblioteca, e então
 
 **Observação Importante: somente o faça depois de fazer o Tutorial 01 - Django**
 
-##**Passo 1: Configure seu ambiente de desenvolvimento**
+## **Passo 1: Configure seu ambiente de desenvolvimento**
 
 Sempre que você estiver iniciando um projeto de desenvolvimento web, é uma boa ideia configurá-lo primeiro.
 
@@ -57,7 +57,7 @@ Você saberá que seu ambiente virtual foi ativado, porque o _prompt_ do console
 (bibenv) $ pip install django
 ```
 
-##**Passo 2: Criando seu projeto em Django**
+## **Passo 2: Criando seu projeto em Django**
 
 2.1) Certifique-se de que você está dentro do diretório `Tutorial_REST_01` e o ambiente virtual ativado. Agora, digite o comando abaixo para criar um projeto.
 
@@ -69,10 +69,10 @@ Você saberá que seu ambiente virtual foi ativado, porque o _prompt_ do console
 
 O comando acima irá criar uma pasta chamada “**config**” contendo alguns arquivos. No painel esquerdo do **VS Code**, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![pasta website](../img_readme/pasta_website.png)
+![pasta website](img_readme/pasta_website.png)
 
 
-##**Passo 3: Testando seu servidor Django**
+## **Passo 3: Testando seu servidor Django**
 
 3.1) Depois que sua estrutura de arquivos estiver configurada, você pode iniciar o servidor de desenvolvimento que já vem embutido no Django. Para verificar se a configuração foi bem-sucedida, execute o seguinte comando no console do Terminal:
 
@@ -83,16 +83,16 @@ Ao posicionar o mouse no link “**http://127.0.0.1:8000/**” você verá a seg
 
 3.2) Observe no console do Terminal as mensagens da figura abaixo:
 
-![console terminal](../img_readme/console_terminal.png)
+![console terminal](img_readme/console_terminal.png)
 
 
 No **Windows** irá aparecer “**Seguir o link (ctrl + click)**”. Ao efetuar esta operação, você será direcionado para uma aba do seu browser, e, se tudo estiver correto, você verá uma página da web como a da figura abaixo.
 
-![tela django](../img_readme/tela_django.png)
+![tela django](img_readme/tela_django.png)
 
 3.3) Parabéns, você acabou de criar um projeto, nossa configuração está correta e você o testou no servidor de desenvolvimento. Agora o Django está pronto para começarmos a desenvolver.
 
-##**Passo 4: Criando uma aplicação em Django**
+## **Passo 4: Criando uma aplicação em Django**
 
 Para esta parte do tutorial, criaremos uma “**app**” chamada “**books**”.
 
@@ -104,12 +104,12 @@ python manage.py startapp books
 
 Este comando irá criar um diretório chamado “**books**” com vários arquivos. Veja a estrutura na figura abaixo.
 
-![pasta hello_world](../img_readme/pasta_books.png)
+![pasta hello_world](img_readme/pasta_books.png)
 
 
 4.2) Agora que você criou a “**app**”, temos que “instalá-la” no seu projeto. Abra o arquivo (`config/settings.py`) e adicione a seguinte linha de código destacada em INSTALLED_APPS: (**Não se esqueça de colocar a vírgula após a _string_**).
 
-![INSTALLED_APPS](../img_readme/installed_apps.png)
+![INSTALLED_APPS](img_readme/installed_apps.png)
 
 Essa linha de código indica que seu projeto agora sabe que o aplicativo que você acabou de criar existe.
 
@@ -126,9 +126,9 @@ class HelloWorldConfig(AppConfig):
 
 4.3) Neste mesmo arquivo (`config/settings.py`) procure pelo comentário “**#Internationalization**” e altere as configurações para `LANGUAGE_CODE` e `TIME_ZONE`. Veja a figura abaixo. 
 
-![Internationalization](../img_readme/internationalization.png)
+![Internationalization](img_readme/internationalization.png)
 
-##**Passo 5: Criando um Banco de Dados**
+## **Passo 5: Criando um Banco de Dados**
 
 5.1)	Na linha de comando do VS Code, digite o seguinte comando:
 
@@ -151,7 +151,7 @@ Em outras palavras, para garantir que o BD reflita o estado atual do seu projeto
 
 5.2) 	Agora, para confirmar se tudo está funcionando corretamente, reinicie nosso servidor no Terminal (`python manage.py runserver`), e visite “**http://127.0.0.1:8000**”. Você deverá a seguinte página da web:
 
-![tela django](../img_readme/tela_django.png)
+![tela django](img_readme/tela_django.png)
 
 ## **Passo 6: Criando um Modelo (“Model”) de Banco de Dados**
 
@@ -246,12 +246,12 @@ Superuser created successfully.
 
 7.2) Agora, reinicie o servidor no Terminal (`python manage.py runserver`), e no seu browser visite “**http://127.0.0.1:8000/admin**”. Você deverá ver a tela de login do administrador (“**admin**”) que está na figura abaixo:
 
-![tela login admin](../img_readme/tela_login_admin.png)
+![tela login admin](img_readme/tela_login_admin.png)
 
 
 7.3) Faça o login inserindo o nome de usuário (“**Username**”) e a senha (“Password”) que você acabou de criar no Passo 7.1. Você verá a página inicial do Django “**admin**” a seguir:
 
-![tela admin logada](../img_readme/tela_admin_logada.png)
+![tela admin logada](img_readme/tela_admin_logada.png)
 
 Surge uma pergunta: onde está nosso “**app**” de “**books**”? Ele não é exibido na página principal do administrador! Assim como devemos adicionar explicitamente novos aplicativos à configuração “**INSTALLED_APPS**”, também devemos atualizar o arquivo `admin.py` do nosso aplicativo para que ele apareça no módulo administrador (i.e. “Django admin”).
 
@@ -267,16 +267,16 @@ admin.site.register(Book)
 
 Agora, o Django sabe que deve exibir nosso “app” de “**books**” e o seu “model” (modelo) de BD chamado “**Book**” na página do “admin”. Se você atualizar seu browser (navegador), verá que ele aparece:
 
-![tela admin logada book](../img_readme/tela_logada_admin_book.png)
+![tela admin logada book](img_readme/tela_logada_admin_book.png)
 
 7.5) Agora vamos criar nosso primeiro livro da biblioteca para nosso Banco de Dados. Clique no botão “**+Add**” (“+Adicionar”) que está do lado oposto de “**Books**” e insira os dados nos campos indicados na figura abaixo. Você pode entrar com quaisquer valores.
 
-![add book](../img_readme/add_book.png)
+![add book](img_readme/add_book.png)
 
 7.6) Em seguida, clique no botão “**Save**” (“Salvar”), que o redirecionará para a página principal do “**Book**”. 
 A figura abaixo irá aparecer.
 
-![book saved](../img_readme/book_saved.png)
+![book saved](img_readme/book_saved.png)
 
 ## **Passo 8: Criando nossas Views/Templates/URLs**
 
@@ -399,18 +399,18 @@ urlpatterns = [
 
 8.8) Agora, ao reiniciar o servidor no Terminal (`python manage.py runserver`), visite “**http://127.0.0.1:8000**”. Você deverá a seguinte página da web:
 
-![all books listed](../img_readme/all_books_listed.png)
+![all books listed](img_readme/all_books_listed.png)
 
 
 ## **Passo 9: Adicionando Novos Livros (Books)**
 
 Para adicionar novos livros à nossa biblioteca, volte ao módulo “**admin**” (digite “**http://127.0.0.1:8000/admin**” na linha de endereço do seu browser) e crie mais dois livros. Minha tela se parece com a figura abaixo.
 
-![more books included admin](../img_readme/more_books_included_admin.png)
+![more books included admin](img_readme/more_books_included_admin.png)
 
 Se você retornar à página inicial no seu browser (“**http://127.0.0.1:8000/**”), verá que ela exibe automaticamente nossos livros formatados.
 
-![more books listed](../img_readme/more_books_listed.png)
+![more books listed](img_readme/more_books_listed.png)
 
 Por meio de todos esses passos anteriores criamos um site tradicional com o Django. Agora vamos adicionar uma API a ele!
 
@@ -431,7 +431,7 @@ Django REST Framework é adicionado como qualquer outro aplicativo adicional. Ce
 
 10.2) Abra o arquivo (`config/settings.py`) e adicione a seguinte linha de código abaixo em **INSTALLED_APPS**: (Não se esqueça de colocar a vírgula após a string).
 
-![DRF installed](../img_readme/installed_apps_rest_framework.png)
+![DRF installed](img_readme/installed_apps_rest_framework.png)
 
 Por fim, nossa API irá expor um único “**endpoint**” que lista todos os livros em JSON. Portanto, precisaremos de uma nova rota de URL, uma nova “**view**” e um novo arquivo “**serializer**” (veremos mais sobre isso em breve nos próximos passos).
 
@@ -445,7 +445,7 @@ python manage.py startapp api
 
 10.4) Abra o arquivo (`config/settings.py`) e adicione as seguintes linhas de código em **INSTALLED_APPS**: (Não se esqueça de colocar a vírgula após a _string_).
 
-![installed apps api](../img_readme/installed_apps_api.png)
+![installed apps api](img_readme/installed_apps_api.png)
 
 O aplicativo “**api**” não terá seus próprios “models” de banco de dados, portanto, não há necessidade de criar um arquivo de migração e executar o comando de migração (“**run migrate**”) para atualizar o BD.
 
@@ -528,14 +528,14 @@ class BookSerializer(serializers.ModelSerializer): class Meta:
 
 14.1) Agora, ao reiniciar o servidor no Terminal (`python manage.py runserver`), visite “**http://127.0.0.1:8000/api**”. Você deverá a seguinte página da web:
 
-![visualizando serializer](../img_readme/visualizando_serializer.png)
+![visualizando serializer](img_readme/visualizando_serializer.png)
 
 Uau olhe isso! O Django REST Framework fornece essa visualização por padrão. E há muitas funcionalidades incorporadas nesta página que exploraremos ao longo dos outros tutoriais. Por enquanto, quero que você compare esta página com o endpoint **JSON** bruto. Clique no botão “**GET**” e selecione “**json**” no menu suspenso. Você verá a figura abaixo.
 
-![visualizando serializer json](../img_readme/visualizando_serializer_json.png)
+![visualizando serializer json](img_readme/visualizando_serializer_json.png)
 
 Observe que existem três opções de visualização: “**JSON**”, “**Dados brutos**” e “**Cabeçalhos**”. É assim que o nosso endpoint da API se parece. Caso escolha a opção “**Dados brutos**”, a figura abaixo será mostrada.
 
-![visualizando serializer json](../img_readme/visualizando_serializer_bruto.png)
+![visualizando serializer json](img_readme/visualizando_serializer_bruto.png)
 
 Acho que podemos concordar que a versão do Django REST Framework é mais atraente.
