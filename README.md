@@ -7,5 +7,4 @@
 > **em desenvolvimento**
 
 ### Django REST Framework
-* Tutorial Django REST 01 – Criando Uma Aplicação Web para Biblioteca e sua API: ()
-* 
+* [Tutorial Django REST 01 – Criando Uma Aplicação Web para Biblioteca e sua API](https://github.com/csp1po/dw2/tree/t1_start)
