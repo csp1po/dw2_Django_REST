@@ -509,8 +509,8 @@ from books.models import Book
 from .serializers import BookSerializer
 
 class BookAPIView(generics.ListAPIView):
-	queryset = Book.objects.all()
- 	serializer_class = BookSerializer
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
 ```
 
 Nas primeiras linhas do arquivo editado acima, importamos a classe de visualizações genéricas do Django REST Framework, os “**models**” do nosso aplicativo (**app**) `Book`, e os serializadores (“**serializers**”) do nosso aplicativo (**app**) “**api**”, que serão criados no próximo passo.
@@ -543,8 +543,8 @@ from rest_framework import serializers
 from books.models import Book
 
 class BookSerializer(serializers.ModelSerializer): class Meta:
-	model = Book
-	fields = ('title', 'subtitle', 'author', 'isbn')
+    model = Book
+    fields = ('title', 'subtitle', 'author', 'isbn')
 ```
 
 ---
