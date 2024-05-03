@@ -174,13 +174,13 @@ Agora adicione o seguinte código a este arquivo (em destaque):
 
 ```python
 class Book(models.Model):
-	title = models.CharField(max_length=250)
-	subtitle = models.CharField(max_length=250) 
-	author = models.CharField(max_length=100)
-	isbn = models.CharField(max_length=13) 
+   title = models.CharField(max_length=250)
+   subtitle = models.CharField(max_length=250) 
+   author = models.CharField(max_length=100)
+   isbn = models.CharField(max_length=13) 
 
-	def __str__(self):
-		return self.title 
+   def __str__(self):
+	return self.title 
 ```
 
 > Observe que criamos um “**model**” de BD chamado “**Book**”, que contém quatro campos: `title` (título do livro), `subtitle` (subtítulo do livro), `author` (autor) e [`isbn`](https://www.isbn-international.org/content/what-isbn "o que é um isbn?"). Também incluímos um método mágico (`__str__`), que irá mostrar o título do livro no módulo “**admin**”. Django fornece muitos campos de “**model**" suportando tipos comuns de conteúdo como caracteres, datas, inteiros, emails e assim por diante.
