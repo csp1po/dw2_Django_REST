@@ -5,7 +5,7 @@ Neste tutorial vamos construir um Web Site básico para uma biblioteca, e então
 
 **Observação Importante: somente o faça depois de fazer o Tutorial 01 - Django**
 
-##**Passo 1: Configure seu ambiente de desenvolvimento**
+## **Passo 1: Configure seu ambiente de desenvolvimento**
 
 Sempre que você estiver iniciando um projeto de desenvolvimento web, é uma boa ideia configurá-lo primeiro.
 
@@ -57,7 +57,7 @@ Você saberá que seu ambiente virtual foi ativado, porque o _prompt_ do console
 (bibenv) $ pip install django
 ```
 
-##**Passo 2: Criando seu projeto em Django**
+## **Passo 2: Criando seu projeto em Django**
 
 2.1) Certifique-se de que você está dentro do diretório `Tutorial_REST_01` e o ambiente virtual ativado. Agora, digite o comando abaixo para criar um projeto.
 
@@ -72,7 +72,7 @@ O comando acima irá criar uma pasta chamada “**config**” contendo alguns ar
 ![pasta website](img_readme/pasta_website.png)
 
 
-##**Passo 3: Testando seu servidor Django**
+## **Passo 3: Testando seu servidor Django**
 
 3.1) Depois que sua estrutura de arquivos estiver configurada, você pode iniciar o servidor de desenvolvimento que já vem embutido no Django. Para verificar se a configuração foi bem-sucedida, execute o seguinte comando no console do Terminal:
 
@@ -92,7 +92,7 @@ No **Windows** irá aparecer “**Seguir o link (ctrl + click)**”. Ao efetuar 
 
 
 
-##**Passo 4: Criando uma aplicação em Django**
+## **Passo 4: Criando uma aplicação em Django**
 
 Para esta parte do tutorial, criaremos uma “**app**” chamada “**books**”.
 
@@ -132,7 +132,7 @@ class BooksConfig(AppConfig):
 
 
 
-##**Passo 5: Criando um Banco de Dados**
+## **Passo 5: Criando um Banco de Dados**
 
 5.1)	Na linha de comando do VS Code, digite o seguinte comando:
 
