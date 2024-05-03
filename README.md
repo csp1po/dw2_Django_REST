@@ -303,8 +303,8 @@ from django.views.generic import ListView
 from .models import Book 
 
 class BookListView(ListView):
-	model = Book 
-   template_name = 'book_list.html'
+    model = Book 
+    template_name = 'book_list.html'
 ```
 
 Na primeira linha, importamos `ListView` e na segunda linha importamos o “**model**” `Book`. Na “**View**” que chamamos de `BookListView`, criamos uma classe filha de `ListView` e especificamos o “**model**” e o “**template**” corretos.
@@ -331,10 +331,10 @@ TEMPLATES = [
 <h1>Todos os livros</h1>
 {% for book in object_list %}
    <ul>
-		<li>Título: {{ book.title }}</li> 
-		<li>Subtítulo: {{ book.subtitle }}</li> 
-		<li>Autor: {{ book.author }}</li> 
-		<li>ISBN: {{ book.isbn }}</li>
+     <li>Título: {{ book.title }}</li> 
+     <li>Subtítulo: {{ book.subtitle }}</li> 
+     <li>Autor: {{ book.author }}</li> 
+     <li>ISBN: {{ book.isbn }}</li>
   </ul>
 {% endfor %}
 ```
@@ -355,7 +355,7 @@ from django.views.generic import ListView
 from .models import Book 
 
 class BookListView(ListView):
-	model = Book 
+   model = Book 
    template_name = 'book_list.html'
    context_object_name = 'all_books_list'
 ```
@@ -367,10 +367,10 @@ class BookListView(ListView):
 <h1>Todos os livros</h1>
 {% for book in all_books_list %}
    <ul>
-		<li>Título: {{ book.title }}</li> 
-		<li>Subtítulo: {{ book.subtitle }}</li> 
-		<li>Autor: {{ book.author }}</li> 
-		<li>ISBN: {{ book.isbn }}</li>
+     <li>Título: {{ book.title }}</li> 
+     <li>Subtítulo: {{ book.subtitle }}</li> 
+     <li>Autor: {{ book.author }}</li> 
+     <li>ISBN: {{ book.isbn }}</li>
   </ul>
 {% endfor %}
 ```
