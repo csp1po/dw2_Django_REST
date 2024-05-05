@@ -311,7 +311,8 @@ class BlogTests(TestCase):
 			author = f'{post.author}'
 			title = f'{post.title}'
 			body = f'{post.body}' 
-			self.assertEqual(author, 'testuser1') 			self.assertEqual(title, 'Blog title') 
+			self.assertEqual(author, 'testuser1')
+			self.assertEqual(title, 'Blog title') 
 			self.assertEqual(body, 'Body content...')
 ```
 
