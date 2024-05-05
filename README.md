@@ -4,7 +4,7 @@ Neste tutorial vamos construir uma Blog API usando o conjunto completo de recurs
 
 **Observação Importante: somente o faça depois de fazer o Tutorial Django 01**
 
-##**Passo 1: Configure seu ambiente de desenvolvimento**
+## **Passo 1: Configure seu ambiente de desenvolvimento**
 
 Sempre que você estiver iniciando um projeto de desenvolvimento web, é uma boa ideia configurá-lo primeiro.
 
