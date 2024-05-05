@@ -78,7 +78,7 @@ O comando acima irá criar uma pasta chamada “**config**” contendo alguns ar
 ```
 python manage.py runserver
 ```
-Ao posicionar o mouse no link “**http://127.0.0.1:8000/**” você verá a seguinte mensagem:
+Ao posicionar o mouse no link "http://127.0.0.1:8000/" você verá a seguinte mensagem:
 
 3.2) Observe no console do Terminal as mensagens da figura abaixo:
 
