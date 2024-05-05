@@ -150,7 +150,7 @@ Entretanto, “**migrate**” irá sincronizar o Banco de Dados com o estado atu
 
 Em outras palavras, para garantir que o BD reflita o estado atual do seu projeto, você precisará executar o comando “migrate” (e também o comando “**makemigrations**”) cada vez que atualizar um “model”. Este último, veremos em um passo futuro.
 
-5.2) 	Agora, para confirmar se tudo está funcionando corretamente, reinicie nosso servidor no Terminal (`python manage.py runserver`), e visite “**http://127.0.0.1:8000**”. Você deverá a seguinte página da web:
+5.2) 	Agora, para confirmar se tudo está funcionando corretamente, reinicie nosso servidor no Terminal (`python manage.py runserver`), e visite "http://127.0.0.1:8000". Você deverá a seguinte página da web:
 
 ![tela django](img_readme/tela_django.png)
 
