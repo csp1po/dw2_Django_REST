@@ -50,7 +50,7 @@ Você saberá que seu ambiente virtual foi ativado, porque o _prompt_ do console
 ```
 
 
-## **Passo 2: Criando um usuário (`user)**
+## **Passo 2: Criando um usuário (`user`)**
 
 Vamos começar criando um segundo usuário. Dessa forma, podemos alternar entre as duas contas de usuário para testar nossas configurações de permissões.
 
