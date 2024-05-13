@@ -1,6 +1,6 @@
 # Tutorial Django REST 03 - Como Aplicar Permissões (Autorizações) Para Proteger Nossa Blog API
 
-A segurança é uma parte importante de qualquer site, mas é duplamente importante com as APIs Web. Atualmente, a nossa API, construída no Tutorial anterior, permite acesso total a qualquer pessoa. Não há restrições. E qualquer usuário pode fazer qualquer coisa que seja extremamente perigosa. Por exemplo, um usuário anônimo pode criar, ler, atualizar ou excluir qualquer postagem do Blog. Mesmo um “**post**” que eles não criaram! Claramente não queremos isso.
+A segurança é uma parte importante de qualquer site, mas é duplamente importante com as APIs Web. Atualmente, a nossa API, construída no Tutorial anterior, permite acesso total a qualquer pessoa. Não há restrições. E qualquer usuário pode fazer qualquer coisa que seja extremamente perigosa. Por exemplo, um usuário anônimo pode criar, ler, atualizar ou excluir qualquer postagem do Blog. Mesmo um “**post**” que ele não criou! Claramente não queremos isso.
 
 O Django REST Framework vem com várias configurações de permissões prontas para uso que podemos usar para proteger nossa API. Eles podem ser aplicados em nível de projeto, nível de exibição ou em qualquer nível de modelo individual.
 Neste tutorial, adicionaremos um novo usuário e experimentaremos várias configurações de permissões. Em seguida, criaremos nossa própria permissão personalizada para que apenas o autor de uma postagem do Blog tenha a capacidade de atualizá-la ou excluí-la. Para isto, siga **atentamente** os passos abaixo.
