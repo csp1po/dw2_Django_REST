@@ -8,3 +8,4 @@
 * [Tutorial Django REST 03 – Como Aplicar Permissões (Autorizações) Para Proteger Nossa Blog API](https://github.com/csp1po/dw2_Django_REST/tree/t3-start)
 * [Tutorial Django REST 04 – Como Aplicar A Autenticação do Usuário em Nossa Blog API](https://github.com/csp1po/dw2_Django_REST/tree/t4-start)
 * [Tutorial Django REST 05 – Criando Uma Aplicação Web de Clientes e sua API](https://github.com/csp1po/dw2_Django_REST/tree/t5-start)
+* [Tutorial Django REST 06 – Inserindo Paginação, Ordenação, Busca e Filtro Na API de Clientes](https://github.com/csp1po/dw2_Django_REST/tree/t6-start)
