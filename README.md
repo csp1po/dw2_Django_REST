@@ -11,3 +11,4 @@
 * [Tutorial Django REST 06 – Inserindo Paginação, Ordenação, Busca e Filtro Na API de Clientes](https://github.com/csp1po/dw2_Django_REST/tree/t6-start)
 * [Tutorial Django REST 07 – Efetuando o “deployment” de uma API usando o aplicativo `Railway`](https://github.com/csp1po/dw2_Django_REST/tree/t7-start)
 * [Tutorial Django REST 08 – Como construir uma API com Django REST Framework e PostgreSQL](https://github.com/csp1po/dw2_Django_REST/tree/t8-start)
+* [Tutorial Django REST 09 – Criando Uma API Django REST e uma interface em Vue.JS no *frontend*](https://github.com/csp1po/dw2_Django_REST/tree/t9-start)
