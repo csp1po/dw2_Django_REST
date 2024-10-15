@@ -320,7 +320,23 @@ SITE_ID = 1 # new
 > 
 > Já o `SITE_ID` faz parte da [estrutura interna de “sites” do Django](https://docs.djangoproject.com/pt-br/5.0/ref/contrib/sites/ "the sites framework"), que é uma maneira de hospedar vários sites do mesmo projeto Django. Obviamente, temos apenas um site em que estamos trabalhando aqui, mas o `django-allauth` usa a estrutura de sites, e, portanto, devemos especificar uma configuração padrão.
 
-5.4) Bem, como adicionamos novos aplicativos, então é hora de atualizar o Banco de Dados. Na linha de comando digite:
+5.4) No mesmo arquivo “**config/settings.py**”, procure pela lista "**MIDDLEWARE**", e substitua o seu conteúdo pelo que está abaixo.
+
+```python
+MIDDLEWARE = [
+'django.middleware.security.SecurityMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.middleware.common.CommonMiddleware',
+'django.middleware.csrf.CsrfViewMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware',
+'django.contrib.messages.middleware.MessageMiddleware',
+'django.middleware.clickjacking.XFrameOptionsMiddleware',
+'allauth.account.middleware.AccountMiddleware',
+]
+```
+
+
+5.5) Bem, como adicionamos novos aplicativos, então é hora de atualizar o Banco de Dados. Na linha de comando digite:
 
 ```
 python manage.py migrate
@@ -341,7 +357,7 @@ Running migrations:
   Applying socialaccount.0003_extra_data_default_dict... OK
 ```
 
-5.5) Agora atualize nosso arquivo "**config/urls.py**" para adicionar a nova rota de URL para o registro.
+5.6) Agora atualize nosso arquivo "**config/urls.py**" para adicionar a nova rota de URL para o registro.
 
 ```python
 # config/urls.py
@@ -356,7 +372,7 @@ urlpatterns = [
 ]
 ```
 
-5.6) E terminamos! Agora podemos ativar o servidor (`python manage.py runserver`). Vá para o endereço 
+5.7) E terminamos! Agora podemos ativar o servidor (`python manage.py runserver`). Vá para o endereço 
 "http://127.0.0.1:8000/api/v1/dj-rest-auth/registration/" e observe a figura abaixo.
 
 ![tela_api_v1_dj_rest_auth_registration](img_readme/tela_api_v1_dj_rest_auth_registration.png)
