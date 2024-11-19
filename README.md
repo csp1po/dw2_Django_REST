@@ -459,12 +459,12 @@ from .models import Post
 from .serializers import PostSerializer
 
 class PostList(generics.ListCreateAPIView): 
-	queryset = Post.objects.all() 
-	serializer_class = PostSerializer
+   queryset = Post.objects.all() 
+   serializer_class = PostSerializer
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView): 
-	queryset = Post.objects.all()
-	serializer_class = PostSerializer
+   queryset = Post.objects.all()
+   serializer_class = PostSerializer
 ```
 
 Nas primeiras linhas do arquivo editado acima, importamos o módulo `generics` do Django REST Framework, bem como nossos arquivos de “**models**” e “**serializers**”. Em seguida, criamos duas “**views**”. A `PostList` que usa o ”**generics**” `ListCreateAPIView` e o `PostDetail` que usa o `RetrieveUpdateDestroyAPIView`.
