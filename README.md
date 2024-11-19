@@ -542,7 +542,8 @@ Um “**serializer**” converte dados em um formato fácil de usar na Internet.
 from rest_framework import serializers
 from books.models import Book
 
-class BookSerializer(serializers.ModelSerializer): class Meta:
+class BookSerializer(serializers.ModelSerializer):
+  class Meta:
     model = Book
     fields = ('title', 'subtitle', 'author', 'isbn')
 ```
