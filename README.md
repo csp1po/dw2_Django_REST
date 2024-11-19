@@ -93,7 +93,7 @@ No **Windows** irá aparecer “**Seguir o link (ctrl + click)**”. Ao efetuar 
 
 ## **Passo 4: Criando uma aplicação em Django**
 
-Para esta parte do tutorial, criaremos uma “**app**” chamada “**books**”.
+Para esta parte do tutorial, criaremos uma “**app**” chamada “**posts**”.
 
 4.1) Para criar uma “**app**”, execute o seguinte comando:
 
@@ -101,7 +101,7 @@ Para esta parte do tutorial, criaremos uma “**app**” chamada “**books**”
 python manage.py startapp posts
 ```
 
-Este comando irá criar um diretório chamado “**books**” com vários arquivos. Veja a estrutura na figura abaixo.
+Este comando irá criar um diretório chamado “**posts**” com vários arquivos. Veja a estrutura na figura abaixo.
 
 ![pasta_posts](img_readme/pasta_posts.png)
 
