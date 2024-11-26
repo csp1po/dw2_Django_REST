@@ -157,7 +157,7 @@ Em outras palavras, para garantir que o BD reflita o estado atual do seu projeto
 
 ## **Passo 6: Criando um Modelo (“Model”) de Banco de Dados**
 
-6.1) Abra o arquivo "**models.py**" no diretório ("**books/models.py**"). Já existe uma linha de código lá que importa um módulo chamado "**models**". Este módulo nos ajuda a construir novos modelos, os quais irão “modelar” as características dos dados no nosso BD. 
+6.1) Abra o arquivo "**models.py**" no diretório ("**posts/models.py**"). Já existe uma linha de código lá que importa um módulo chamado "**models**". Este módulo nos ajuda a construir novos modelos, os quais irão “modelar” as características dos dados no nosso BD. 
 
 ```python
 from django.db import models
