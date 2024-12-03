@@ -292,7 +292,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 	serializer_class = PostSerializer
 ```
 
-6.3) E terminamos. Vamos testar as coisas. Execute o comando para carregar o servidor de desenvolvimento: `python manage.py runserver`. Navegue até a página `PostDetail`, localizada em "http://127.0.0.1:8000/api/v1/1/". Verifique se você está logado com sua conta de `superuser`, que é o autor da postagem. O nome de usuário deve estar visível no canto superior direito da página (`admin` no meu caso). Veja a figura abaixo.
+6.3) Para terminar, vamos testar as coisas. Execute o comando para carregar o servidor de desenvolvimento: `python manage.py runserver`. Navegue até a página `PostDetail`, localizada em "http://127.0.0.1:8000/api/v1/1/". Verifique se você está logado com sua conta de `superuser`, que é o autor da postagem. O nome de usuário deve estar visível no canto superior direito da página (`admin` no meu caso). Veja a figura abaixo.
 
 ![post_detail_login_admin](img_readme/post_detail_login_admin.png)
 
