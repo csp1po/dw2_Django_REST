@@ -273,7 +273,7 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
 > Caso contrário, a requisição é para uma escrita de algum tipo, o que significa atualizar o recurso da API para criar, excluir ou editar a funcionalidade. Nesse caso, verificamos se o autor do objeto em questão, que é nosso “**post**” do Blog chamado `obj.author`, corresponde ao usuário que está fazendo a requisição `request.user`.
 
 
-6.2) Abra o arquivo na pasta “**posts**” chamado “**posts/views.py**”. Adicione o código abaixo (em destaque).
+6.2) Abra o arquivo na pasta “**posts**” chamado “**posts/views.py**”. Altere o seu conteúdo com o código abaixo.
 
 ```python
 # posts/views.py
