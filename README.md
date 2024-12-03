@@ -203,7 +203,7 @@ Felizmente, o Django REST Framework vem com várias configurações de permissõ
 A implementação de qualquer uma dessas quatro configurações acima requer a atualização do parâmetro que se encontra no arquivo (“**config/settings.py**”). É o `DEFAULT_PERMISSION_CLASSES` e depois dar o “refresh” do navegador. É isso!
 
 
-5.1) Abra o arquivo “**config/settings.py**”, e substitua o conteúdo dele (veja o destaque):
+5.1) Abra o arquivo “**config/settings.py**”, e substitua o conteúdo dele com o que está abaixo:
 
 ```python
 # config/settings.py
