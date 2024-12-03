@@ -147,7 +147,7 @@ REST_FRAMEWORK = {
 
 O que queremos agora é restringir o acesso à API somente para usuários autenticados. Existem vários lugares em que podemos fazer isso, isto é, em nível de projeto, em nível de visualização ou nível de objeto. Mas como temos apenas duas visualizações (i.e. “**views**”) no momento, vamos começar por aí e adicionar permissões a cada uma delas.
 
-4.1) Abra o arquivo ("**posts/views.py**") e substitua o seu conteúdo (veja o destaque)::
+4.1) Abra o arquivo ("**posts/views.py**") e substitua o seu conteúdo com o código abaixo:
 
 ```
 # posts/views.py
