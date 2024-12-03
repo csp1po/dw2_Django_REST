@@ -238,7 +238,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 
 ## **Passo 6: Criando Permissões Personalizadas**
 
-Agora chegou a hora da nossa primeira permissão personalizada. Como uma breve recapitulação de onde estamos agora: temos dois usuários: `testuser` e `superuser`. Há uma postagem no nosso Blog que foi criada por ele (i.e. “superuser”).
+Agora chegou a hora da nossa primeira permissão personalizada. Como uma breve recapitulação de onde estamos agora: temos dois usuários: `testuser` e `superuser`. Há uma postagem no nosso Blog que foi criada por este último (i.e. “superuser”).
 
 Queremos que apenas o autor de uma postagem específica possa editá-la ou excluí-la. Caso contrário, ela deve ser para leitura somente. Portanto, a conta `superuser` deve ter acesso CRUD completo à instância individual do Blog, mas o usuário `testuser` não. 
 
