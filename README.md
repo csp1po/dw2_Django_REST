@@ -1,6 +1,6 @@
 # Tutorial Django 04 - Como Aplicar A Autenticação do Usuário em Nossa Blog API
 
-Neste Tutorial, implementaremos a **autenticação**, que é o processo pelo qual um usuário pode se registrar para uma nova conta (i.e. fazer o "**sign-up**"), fazer **login** com ela e sair (**logout**).
+Neste Tutorial, implementaremos a **autenticação**, que é o processo pelo qual um usuário pode se registrar (i.e. se cadastrar) para uma nova conta (i.e. fazer o "**sign-up**"), fazer **login** com ela e sair (**logout**).
 
 Dentro de um site Django tradicional e monolítico, a autenticação é mais simples e envolve um padrão de *cookie* baseado em sessão. Porém, com uma API as coisas são um pouco mais complicadas. Lembre-se de que o HTTP é um protocolo sem estado (“**stateless**”), portanto, não há uma maneira integrada de lembrar se um usuário está autenticado de uma requisição para outra. Cada vez que ele solicita um recurso restrito, ele deve verificar a si mesmo.
 
